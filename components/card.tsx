@@ -25,7 +25,7 @@ export default function PortfolioCard({
     url,
 }: PortfolioCardProps) {
     return (
-        <div className="max-w-sm w-full bg-gray-800 rounded-2xl md:rounded-2xl rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-2">
+        <div className="max-w-sm w-full bg-bag rounded-2xl md:rounded-2xl rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-2">
 
             {/* Imagen */}
             <div className="relative h-48 md:h-48 h-40">
@@ -38,8 +38,8 @@ export default function PortfolioCard({
 
             {/* Contenido */}
             <div className="p-6 md:p-6 p-4">
-                <h3 className="text-xl md:text-xl text-lg font-bold text-white mb-2 md:mb-2 mb-1.5">{title}</h3>
-                <p className="text-gray-400 mb-4 md:mb-4 mb-3 text-sm md:text-sm text-xs text-justify">{description}</p>
+                <h3 className="text-xl md:text-xl text-lg font-bold text-text mb-2 md:mb-2 mb-1.5">{title}</h3>
+                <p className="text-text-secondary mb-4 md:mb-4 mb-3 text-sm md:text-sm text-xs text-justify">{description}</p>
                 {/* Tecnologías */}
                 <div className="flex flex-wrap gap-2 md:gap-2 gap-1.5 mb-6 md:mb-6 mb-4">
                     {technologies.map((tech) => (

@@ -3,8 +3,8 @@ import Card from "./card";
 export default function Portfolio({ id }: { id: string }) {
     return (
         <div>
-            <div className="bg-text-secondary py-20 md:py-20 py-12" id={id}>
-                <h2 className="text-[#111827] px-20 md:px-20 px-6 text-3xl md:text-3xl text-2xl font-semibold mb-8 md:mb-0">PORTFOLIO</h2>
+            <div className="bg-seccions py-20 md:py-20 py-12" id={id}>
+                <h2 className="text-primary px-20 md:px-20 px-6 text-3xl md:text-3xl text-2xl font-semibold mb-8 md:mb-0">PORTFOLIO</h2>
                 <div className="flex md:flex-row flex-col gap-4 md:gap-4 gap-6 px-10 md:px-10 px-6">
                     <div className="pt-8 md:pt-8 pt-0 flex justify-center">
                         <Card

@@ -1,7 +1,7 @@
 export default function Contactanos({ id }: { id: string }) {
     return (
         <div className="w-full px-6 md:px-20 py-16 md:py-16 py-12 bg-bag" id={id}>
-            <h2 className="text-[#111827] text-3xl md:text-3xl text-2xl font-semibold text-center">
+            <h2 className="text-primary text-3xl md:text-3xl text-2xl font-semibold text-center">
                 CONTACT ME
             </h2>
 

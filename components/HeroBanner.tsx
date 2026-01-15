@@ -2,10 +2,10 @@ export default function HeroBanner({ id }: { id: string }) {
     return (
         <div className="w-full py-20 md:py-20 py-12" id={id}>
             <div className="flex flex-col items-center justify-center text-center px-4">
-                <h1 className="text-5xl md:text-5xl text-3xl font-bold text-[#111827]">
+                <h1 className="text-5xl md:text-5xl text-3xl font-bold text-primary">
                     Frank's Vilca
                 </h1>
-                <h1 className="text-5xl md:text-5xl text-3xl font-bold text-[#111827]">
+                <h1 className="text-5xl md:text-5xl text-3xl font-bold text-primary">
                     Quispe
                 </h1>
                 <p className="py-10 md:py-10 py-6 max-w-xl md:text-base text-sm text-gray-600">

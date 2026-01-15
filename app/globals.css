@@ -9,13 +9,13 @@
   --c-text: #111827;
   --c-text-secondary: #6B7280;
   --c-bag: #ffffff;
-  --c-seccions: #F3F4F6;
+  --c-seccions: #E9EBEE;
 }
 
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --c-primary: #2E4A77;
+  --c-primary: #ededed;
   --c-primary-hover: #2563EB;
   --c-secondary: #6366F1;
   --c-text: #F9FAFB;
