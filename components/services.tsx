@@ -4,10 +4,10 @@ import { MdOutlineWeb } from "react-icons/md";
 import { FaDatabase } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 
-export default function Services() {
+export default function Services({ id }: { id: string }) {
     return (
         <div>
-            <div className="bg-bag w-full px-20 py-20">
+            <div className="bg-bag w-full px-20 py-20" id={id}>
                 <h2 className="text-[#111827] text-3xl font-semibold">SERVICES</h2>
                 <div className="flex justify-between">
                     <div className="flex flex-col gap-8 pt-8">

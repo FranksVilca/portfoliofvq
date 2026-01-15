@@ -1,8 +1,8 @@
 
-export default function AboutMe() {
+export default function AboutMe({ id }: { id: string }) {
     return (
         <div>
-            <div className="bg-text-secondary w-full px-20 py-20 flex flex-col-2 gap-20">
+            <div className="bg-text-secondary w-full px-20 py-20 flex flex-col-2 gap-20" id={id}>
                 <div className="flex w-1/4"><img
                     src="/photo.png"
                     alt="Profile"

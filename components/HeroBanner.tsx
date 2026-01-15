@@ -1,6 +1,6 @@
-export default function HeroBanner() {
+export default function HeroBanner({ id }: { id: string }) {
     return (
-        <div className="w-full py-20">
+        <div className="w-full py-20" id={id}>
             <div className="flex flex-col items-center justify-center text-center px-4">
                 <h1 className="text-5xl font-bold text-[#111827]">
                     Frank's Vilca
