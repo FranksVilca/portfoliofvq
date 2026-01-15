@@ -1,4 +1,37 @@
+"use client";
+import { useState } from "react";
+
 export default function Contactanos({ id }: { id: string }) {
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
+
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        setForm({ ...form, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        const res = await fetch("/api/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(form),
+        });
+
+        if (res.ok) {
+            alert("Email sent successfully ✅");
+            setForm({ name: "", email: "", subject: "", message: "" });
+        } else {
+            alert("Error sending email ❌");
+        }
+    };
+
     return (
         <div className="w-full px-6 md:px-20 py-16 md:py-16 py-12 bg-bag" id={id}>
             <h2 className="text-primary text-3xl md:text-3xl text-2xl font-semibold text-center">
@@ -6,12 +39,15 @@ export default function Contactanos({ id }: { id: string }) {
             </h2>
 
             <div className="flex justify-center pt-10 md:pt-10 pt-8">
-                <form className="w-full max-w-xl border px-8 md:px-8 px-4 py-6 md:py-6 py-5 rounded-2xl border-[#9CA3AF] space-y-4 md:space-y-4 space-y-3">
+                <form onSubmit={handleSubmit} className="w-full max-w-xl border px-8 md:px-8 px-4 py-6 md:py-6 py-5 rounded-2xl border-[#9CA3AF] space-y-4 md:space-y-4 space-y-3">
                     <div className="flex flex-col md:flex-row gap-4 md:gap-4 gap-3">
                         <div className="w-full">
                             <p className="mb-1 text-lg md:text-lg text-base">Full Name</p>
                             <input
                                 type="text"
+                                name="name"
+                                value={form.name}
+                                onChange={handleChange}
                                 placeholder="John Doe"
                                 className="w-full border border-[#9CA3AF] rounded-sm px-4 py-2 md:py-2 py-2.5 focus:outline-none md:text-base text-sm"
                             />
@@ -20,6 +56,9 @@ export default function Contactanos({ id }: { id: string }) {
                             <p className="mb-1 text-lg md:text-lg text-base">Email Address</p>
                             <input
                                 type="email"
+                                name="email"
+                                value={form.email}
+                                onChange={handleChange}
                                 placeholder="john@example.com"
                                 className="w-full border border-[#9CA3AF] rounded-sm px-4 py-2 md:py-2 py-2.5 focus:outline-none md:text-base text-sm"
                             />
@@ -29,6 +68,9 @@ export default function Contactanos({ id }: { id: string }) {
                         <p className="mb-1 text-lg md:text-lg text-base">Subject</p>
                         <input
                             type="text"
+                            name="subject"
+                            value={form.subject}
+                            onChange={handleChange}
                             placeholder="Reason for contact"
                             className="w-full border border-[#9CA3AF] rounded-sm px-4 py-2 md:py-2 py-2.5 focus:outline-none md:text-base text-sm"
                         />
@@ -36,6 +78,9 @@ export default function Contactanos({ id }: { id: string }) {
                     <div className="w-full">
                         <p className="mb-1 text-lg md:text-lg text-base">Message</p>
                         <textarea
+                            name="message"
+                            value={form.message}
+                            onChange={handleChange}
                             placeholder="Talk to me about the reason for contact"
                             className="w-full h-32 md:h-32 h-28 resize-none border border-[#9CA3AF] rounded-sm px-4 py-2 md:py-2 py-2.5 focus:outline-none md:text-base text-sm"
                         />
