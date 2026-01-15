@@ -8,7 +8,7 @@
   --c-secondary: #6366F1;
   --c-text: #111827;
   --c-text-secondary: #6B7280;
-  --c-bg: #ffffff;
+  --c-bag: #ffffff;
   --c-seccions: #F3F4F6;
 }
 
@@ -20,7 +20,7 @@
   --c-secondary: #6366F1;
   --c-text: #F9FAFB;
   --c-text-secondary: #9CA3AF;
-  --c-bg: #0F172A;
+  --c-bag: #0F172A;
   --c-seccions: #1E293B;
 }
 
@@ -35,7 +35,7 @@
   --color-secondary: var(--c-secondary);
   --color-text: var(--c-text);
   --color-text-secondary: var(--c-text-secondary);
-  --color-bg: var(--c-bg);
+  --color-bag: var(--c-bag);
   --color-seccions: var(--c-seccions);
 }
 

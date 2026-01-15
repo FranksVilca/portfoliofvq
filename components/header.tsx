@@ -10,7 +10,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="sticky top-0 z-50 w-full bg-bg border-b border-gray-200 dark:border-gray-700">
+        <nav className="sticky top-0 z-50 w-full bg-bag border-b border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-between py-4 px-8">
                 <div>
                     <button
