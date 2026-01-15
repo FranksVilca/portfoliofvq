@@ -1,6 +1,9 @@
+import ParticlesBackground from "./particles";
+
 export default function HeroBanner({ id }: { id: string }) {
     return (
         <div className="w-full py-20 md:py-20 py-12" id={id}>
+            <ParticlesBackground />
             <div className="flex flex-col items-center justify-center text-center px-4">
                 <h1 className="text-5xl md:text-5xl text-3xl font-bold text-primary">
                     Frank's Vilca
