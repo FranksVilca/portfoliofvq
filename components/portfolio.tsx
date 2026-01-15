@@ -10,7 +10,7 @@ export default function Portfolio({ id }: { id: string }) {
                         <Card
                             image="/contigoVoy.png"
                             title="Contigo Voy"
-                            description="Centro psicológico enfocado en el bienestar emocional y la salud mental, ofreciendo acompañamiento profesional y terapias personalizadas."
+                            description="Contigo Voy Mental health center providing professional support and personalized therapeutic treatments."
                             technologies={["React", "Node.js", "Tailwind", "Laravel"]}
                             url="https://www.centropsicologicocontigovoy.com/"
                         />
@@ -19,7 +19,7 @@ export default function Portfolio({ id }: { id: string }) {
                         <Card
                             image="/serviciosMultiples.png"
                             title="Servicios Multiples"
-                            description="Grupo de gasfitería especializado en instalación, mantenimiento y reparación de thermas solares, brindando soluciones eficientes, seguras y sostenibles para el hogar y la industria."
+                            description="Servicios Multiples Industrial plumbing group specializing in sustainable solar water heating solutions, offering efficient maintenance and expert repairs."
                             technologies={["React", "Node.js", "Tailwind"]}
                             url="https://servicios-multiples-thermas-solares.vercel.app/"
                         />
@@ -28,7 +28,7 @@ export default function Portfolio({ id }: { id: string }) {
                         <Card
                             image="/kataAlpaca.png"
                             title="Kata Alpaca"
-                            description="Marca dedicada a la venta de ropa elaborada con fibra de alpaca, combinando tradición, calidad y diseño moderno para ofrecer prendas elegantes, cálidas y duraderas."
+                            description="Kata Alpaca Premium fashion brand blending traditional alpaca fiber with modern design to deliver high-quality, elegant, and durable garments."
                             technologies={["React", "Node.js", "Tailwind"]}
                             url="https://www.kataalpaca.com/"
                         />

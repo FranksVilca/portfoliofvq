@@ -6,7 +6,6 @@ interface PortfolioCardProps {
     description: string;
     technologies: string[];
     url: string;
-    type?: string;
 }
 
 const techColors: Record<string, string> = {
@@ -24,7 +23,6 @@ export default function PortfolioCard({
     description,
     technologies,
     url,
-    type = "Web App",
 }: PortfolioCardProps) {
     return (
         <div className="max-w-sm w-full bg-gray-800 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-2">
@@ -64,7 +62,7 @@ export default function PortfolioCard({
                     className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-2.5 px-4 rounded-lg flex items-center justify-center gap-2"
                 >
                     <IoEyeSharp className="text-xl" />
-                    Ver Demo
+                    View Demo
                 </a>
             </div>
         </div>

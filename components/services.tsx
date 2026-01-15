@@ -15,21 +15,21 @@ export default function Services({ id }: { id: string }) {
                             <div className="h-10 w-10 flex items-center justify-center text-5xl"><FaLaptopCode /></div>
                             <div className="flex flex-col gap-2">
                                 <h4 className="text-primary-hover text-xl font-semibold">Programing</h4>
-                                <p className="text-text">desarrollo de soluciones eficientes y estructuradas.</p>
+                                <p className="text-text">Development of efficient and structured solutions.</p>
                             </div>
                         </div>
                         <div className="flex gap-8">
                             <div className="h-10 w-10 flex items-center justify-center text-5xl"><TbDeviceAnalytics /></div>
                             <div className="flex flex-col gap-2">
                                 <h4 className="text-primary-hover text-xl font-semibold">Data Analysis</h4>
-                                <p className="text-text">análisis y limpieza de datos para la toma de decisiones.</p>
+                                <p className="text-text">Data cleaning and analysis to support informed decision-making.</p>
                             </div>
                         </div>
                         <div className="flex gap-8">
                             <div className="h-10 w-10 flex items-center justify-center text-5xl"><MdOutlineWeb /></div>
                             <div className="flex flex-col gap-2">
                                 <h4 className="text-primary-hover text-xl font-semibold">Front-end Web Developer</h4>
-                                <p className="text-text">interfaces modernas, responsivas y funcionales.</p>
+                                <p className="text-text">Modern, responsive, and functional user interfaces.</p>
                             </div>
                         </div>
                     </div>
@@ -38,14 +38,14 @@ export default function Services({ id }: { id: string }) {
                             <div className="h-10 w-10 flex items-center justify-center text-5xl"><FaDatabase /></div>
                             <div className="flex flex-col gap-2">
                                 <h4 className="text-primary-hover text-xl font-semibold">Data Science</h4>
-                                <p className="text-text">exploración y modelado de datos para obtener insights.</p>
+                                <p className="text-text">Data exploration and modeling to uncover actionable insights.</p>
                             </div>
                         </div>
                         <div className="flex gap-8">
                             <div className="h-10 w-10 flex items-center justify-center text-5xl"><MdDashboard /></div>
                             <div className="flex flex-col gap-2">
                                 <h4 className="text-primary-hover text-xl font-semibold">Dashboards</h4>
-                                <p className="text-text">visualización clara e interactiva de información.</p>
+                                <p className="text-text">Clear and interactive information visualization.</p>
                             </div>
                         </div>
                     </div>
