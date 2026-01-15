@@ -25,10 +25,10 @@ export default function PortfolioCard({
     url,
 }: PortfolioCardProps) {
     return (
-        <div className="max-w-sm w-full bg-gray-800 rounded-2xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-2">
+        <div className="max-w-sm w-full bg-gray-800 rounded-2xl md:rounded-2xl rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-2">
 
             {/* Imagen */}
-            <div className="relative h-48 ">
+            <div className="relative h-48 md:h-48 h-40">
                 <img
                     src={image}
                     alt={title}
@@ -37,15 +37,15 @@ export default function PortfolioCard({
             </div>
 
             {/* Contenido */}
-            <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-                <p className="text-gray-400 mb-4 text-sm text-justify">{description}</p>
+            <div className="p-6 md:p-6 p-4">
+                <h3 className="text-xl md:text-xl text-lg font-bold text-white mb-2 md:mb-2 mb-1.5">{title}</h3>
+                <p className="text-gray-400 mb-4 md:mb-4 mb-3 text-sm md:text-sm text-xs text-justify">{description}</p>
                 {/* Tecnologías */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 md:gap-2 gap-1.5 mb-6 md:mb-6 mb-4">
                     {technologies.map((tech) => (
                         <span
                             key={tech}
-                            className={`px-3 py-1 text-xs font-medium rounded-lg border ${techColors[tech] ??
+                            className={`px-3 md:px-3 px-2.5 py-1 md:py-1 py-0.5 text-xs md:text-xs text-[10px] font-medium rounded-lg border ${techColors[tech] ??
                                 "bg-gray-500/10 text-gray-400 border-gray-500/20"
                                 }`}
                         >
@@ -59,9 +59,9 @@ export default function PortfolioCard({
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-2.5 px-4 rounded-lg flex items-center justify-center gap-2"
+                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-2.5 md:py-2.5 py-2 px-4 md:px-4 px-3 rounded-lg flex items-center justify-center gap-2 md:text-base text-sm"
                 >
-                    <IoEyeSharp className="text-xl" />
+                    <IoEyeSharp className="text-xl md:text-xl text-lg" />
                     View Demo
                 </a>
             </div>
