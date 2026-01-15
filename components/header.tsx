@@ -20,7 +20,7 @@ export default function Navbar() {
                         HOME
                     </button>
                 </div>
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-6 ">
                     <button
                         onClick={() => scrollToSection('#about')}
                         className="text-primary hover:text-primary-hover transition-colors font-medium cursor-pointer"

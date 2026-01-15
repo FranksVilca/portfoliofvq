@@ -1,4 +1,5 @@
 import Navbar from "@/components/header";
+import HeroBanner from "@/components/HeroBanner";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
+      < HeroBanner />
       <div className="min-h-screen bg-primary pt-[56px]">
         <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
           <Image
